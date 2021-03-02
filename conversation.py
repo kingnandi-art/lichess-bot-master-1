@@ -15,10 +15,10 @@ class Conversation:
 
     def command(self, line, game, cmd):
         if cmd == "commands" or cmd == "help":
-            self.send_reply(line, "Supported commands: !name, !howto, !eval, !queue ,!joke currently not working")
+            self.send_reply(line, "Supported commands: !name, !howto, !eval, !queue, !chat")
         elif cmd == "wait" and game.is_abortable():
-            game.ping(60, 120)
-            self.send_reply(line, "Waiting 60 seconds...")
+            game.ping(45, 120)
+            self.send_reply(line, "Waiting 45 seconds...")
         elif cmd == "name":
             self.send_reply(line, "{} (lichess-bot v{})".format(self.engine.name(), self.version))
         elif cmd == "howto":
@@ -32,6 +32,8 @@ class Conversation:
                 self.send_reply(line, "Challenge queue: {}".format(challengers))
             else:
                 self.send_reply(line, "No challenges queued.")
+                 elif cmd == "chat":
+                        self.send_reply(line, "hi there")
 
     def send_reply(self, line, reply):
         self.xhr.chat(self.game.id, line.room, reply)
