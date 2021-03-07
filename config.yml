@@ -14,6 +14,8 @@ engine:                      # engine settings
         - elo3300.bin
         - bestbook.bin
         - network.bin
+        - Drawkiller_EloZoom_big.bin
+        
 #      atomic: # list of book file paths for variant atomic
 #      etc.
 #      use the same pattern for giveaway, crazyhouse, horde, kingofthehill, racingkings, 3check as well
@@ -23,7 +25,6 @@ engine:                      # engine settings
 # engine_options:           # any custom command line params to pass to the engine
 #   cpuct: 3.1
   uci_options:               # arbitrary UCI options passed to the engine
- 
 option name Contempt type spin : 24
 option name Analysis Contempt type combo : Both var Off var White var Black var Both
 option name Threads type spin : 8
@@ -31,13 +32,13 @@ option name Hash type spin : 512
 option name Ponder type check : true
 option name MultiPV type spin : 1
 option name Skill Level type spin : 20
-option name Move Overhead type spin : 2000
+option name Move Overhead type spin : 3000
 option name Slow Mover type spin : 10
 option name nodestime type spin : 0
 option name UCI_Chess960 type check : false
 option name UCI_AnalyseMode type check : false
 option name UCI_LimitStrength type check : false
-option name UCI_Elo type spin : 1350
+option name UCI_Elo type spin : 1400
 option name UCI_ShowWDL type check : false
 option name SyzygyPath type string : <empty>
 option name SyzygyProbeDepth type spin : 100
