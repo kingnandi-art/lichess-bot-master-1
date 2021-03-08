@@ -30,8 +30,8 @@ option name Hash type spin : 400
 option name Ponder type check : true
 option name MultiPV type spin : 1
 option name Skill Level type spin : 20
-option name Move Overhead type spin : 2000
-option name Slow Mover type spin : 10
+option name Move Overhead type spin : 2750
+option name Slow Mover type spin : 2
 option name nodestime type spin : 0
 option name UCI_Chess960 type check : false
 option name UCI_AnalyseMode type check : false
@@ -46,7 +46,7 @@ option name Use NNUE type check : true
 option name EvalFile type string : nn-62ef826d1a6d.nnue
 
 #    go_commands:             # additional options to pass to the UCI go command
-#      nodes: 1000               # Search so many nodes only.
+#      nodes: 2000               # Search so many nodes only.
 #      depth: 20               # Search depth ply only.
 #      movetime: 1         # Integer. Search exactly movetime milliseconds.
 #  xboard_options:            # arbitrary xboard options passed to the engine
