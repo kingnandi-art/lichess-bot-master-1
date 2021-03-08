@@ -10,10 +10,10 @@ engine:                      # engine settings
     enabled: true           # activate polyglot book
     book:
       standard: # list of book file paths for variant standard
-       - komodo.bin
-        - elo3300.bin
-        - bestbook.bin
-        - network.bin
+      -komodo.bin
+      -elo3300.bin
+      -bestbook.bin
+      -network.bin
 #      atomic: # list of book file paths for variant atomic
 #      etc.
 #      use the same pattern for giveaway, crazyhouse, horde, kingofthehill, racingkings, 3check as well
